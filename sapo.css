@@ -1,0 +1,238 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.paginas_cargando{
+    position: absolute;
+    display: flex;
+    top: 0;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    height: 100vh;
+    background-color: #F8ECD1;
+}
+.puntos{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #DEB6AB;
+    animation-name: palpitar;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+@keyframes palpitar{
+    0%{
+     transform: scale(1);
+    }
+    50%{
+     transform: scale(1.3);
+    }
+    100%{
+     transform: scale(1);
+    }
+}
+
+
+.puntos:nth-child(1){
+    animation-delay: 0s;
+}
+.puntos:nth-child(2){
+    animation-delay: 0.5s;
+
+}
+.puntos:nth-child(3){
+    animation-delay: 1s;
+}
+.loader{
+    clip-path: circle(70.7% at 50% 50%);
+    transition: clip-path 3s ease-in-out;
+}
+.loader2{
+    clip-path: circle(0.0% at 50% 50%);
+}
+
+body{
+    font-family: 'Nerko One', cursive;
+    margin: 0px;
+    background-image: url(./fondo.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+
+header{
+    border-radius: 0px 0px 10px 10px;
+    display: flex;
+    height: 70px;
+    background-color: #F8ECD1;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    font-size: large;
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+.logo img{
+    height: 50px;
+    margin-right: 10px;
+}
+.jua2{
+    color: #AC7D88;
+}
+.jua{
+    color: #85586F
+}
+.nav{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+nav a{
+    align-items: center;
+    font-size: 23px;
+    padding-right: 20px;
+    padding-left: 20px;
+    background-color: #DEB6AB;
+    border-radius: 10px;
+
+}
+nav a:hover{
+    color: #F8ECD1;
+}
+nav img{
+    width: 40px;
+    height: 40px;
+}
+img{
+    border-radius: 10px;
+    align-items: center;
+}
+.cafes, .cafes2, .cafes3, .cafes4{
+    text-align: center;
+    border-radius: 10px;
+    margin: 50px;
+    display: flex;
+    padding: 20px;
+    background-color: #f8ecd17e;
+    justify-content: space-between;
+    font-size: 20px;
+    
+}
+.lagrima{
+    width: 100px;
+    height: 100px;
+}
+.capuchi{
+    width: 100px;
+    height: 100px;
+}
+button{
+    color: #FFF8EA;
+    font-size: 20px;
+    font-family: 'Nerko One', cursive;
+    width: 150px;
+    height: auto;
+    border: none;
+    background-color: #594545;
+    border-radius: 20px;
+    cursor: pointer;
+}
+button:hover{
+    background-color: #9E7676
+}
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background-color: #F8ECD1;
+    width: 100%;
+    height: 100px;
+}
+footer img{
+    width: 40px;
+    height: 40px;
+}
+footer .abajo2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.modal{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 200%;
+    background-color: #fff8ea62 ;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.recuadro{
+    width: 50%;
+    height: 50vh;
+    background-color: #DEB6AB;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    font-size: 50px;
+}
+
+.modal img{
+    width: 50px;
+}
+.modal div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.modal .cerrar{
+    position: relative;
+    right: 20px;
+    align-self: end;
+    width: 30px;
+}
+
+.visible{
+    visibility: 1;
+   
+}
+
+.ocultar{
+    display: none;
+}
+.recuadro .cerrar{
+    cursor: pointer;
+    top: -70px;
+
+}
+
+.cafesitos .lagrima{
+    width: 200px;
+    height: 150px;
+}
+.capuchino .capuchi{
+    width: 200px;
+    height: 150px;
+}
+.latte .capuchi{
+    width: 200px;
+    height: 150px;
+}
